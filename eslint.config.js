@@ -23,6 +23,8 @@ export default tseslint.config(
         'warn',
         { allowConstantExport: true },
       ],
+      'quotes': ['error', 'single'],
+      'jsx-quotes': ['error', 'prefer-single']
     },
   },
 )
