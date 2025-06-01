@@ -1,19 +1,17 @@
+import { Link } from 'react-router-dom'
+
 import './App.css'
-import { InlineStyle } from './components/InlineStyle'
-import { CssModules } from './components/CssModules'
-import { StyledJsx } from './components/StyledJsx'
-import { StyledComponents } from './components/StyledComponents'
-import { Emotion } from './components/Emotion'
+import { Router } from './router/Router'
 
 export default function App() {
-
   return (
-    <div>
-      <InlineStyle />
-      <CssModules />
-      <StyledJsx />
-      <StyledComponents />
-      <Emotion />
-    </div>
+    <>
+      <nav>
+        <Link to='/'>Home</Link>
+        <Link to='/page1'>Page1</Link>
+        <Link to='/page2'>Page2</Link>
+      </nav>
+      <Router />
+    </>
   )
 }
