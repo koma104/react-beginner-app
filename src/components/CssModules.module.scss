@@ -1,0 +1,8 @@
+.container {
+  color: yellow;
+  font-size: 18px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-block-end: 10px;
+}

@@ -1,24 +1,19 @@
-import { useState } from 'react'
 import './App.css'
-import { ChildArea } from './components/ChildArea'
+import { InlineStyle } from './components/InlineStyle'
+import { CssModules } from './components/CssModules'
+import { StyledJsx } from './components/StyledJsx'
+import { StyledComponents } from './components/StyledComponents'
+import { Emotion } from './components/Emotion'
 
 export default function App() {
-  const [text, setText] = useState('');
-  const [open, setOpen] = useState(false);
-
-  const onChangeText = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setText(e.target.value);
-  }
-
-  const onClickOpen = () => setOpen(!open);
 
   return (
     <div>
-      <input type="text" value={text} onChange={onChangeText} />
-      <br />
-      <br />
-      <button onClick={onClickOpen}>表示</button>
-      <ChildArea open={open} />
+      <InlineStyle />
+      <CssModules />
+      <StyledJsx />
+      <StyledComponents />
+      <Emotion />
     </div>
   )
 }
