@@ -1,4 +1,4 @@
-import styles from './CssModules.module.scss'
+import styles from '../styles/CssModules.module.scss'
 
 export const CssModules = () => {
   return (
