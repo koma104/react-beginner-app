@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 import './App.css'
 import { Router } from './router/Router'
-import { PrimaryButton } from './components/atoms/PrimaryButton'
+import { SearchInput } from './components/molecules/SearchInput'
 
 export default function App() {
   return (
@@ -14,7 +14,7 @@ export default function App() {
       </nav>
       <Router />
       <br />
-      <PrimaryButton>Primary</PrimaryButton>
+      <SearchInput />
     </>
   )
 }
