@@ -1,3 +1,7 @@
+// 注意: <style jsx> の記法はNext.js専用です。
+// 通常のReact（Vite, CRAなど）ではエラーになります。
+// 通常のReactではCSS ModulesやEmotionなどを使用してください。
+
 export const StyledJsx = () => {
   return (
     <>
